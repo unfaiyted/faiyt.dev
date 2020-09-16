@@ -1,0 +1,45 @@
+//font-family: 'Noto Sans JP', sans-serif;
+//font-family: 'Roboto', sans-serif;
+@import "./colors";
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto', sans-serif;
+  color: $black-eerie;
+  margin-top:0;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+
+p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  color: $black-rich;
+  font-size: 1em;
+
+  &.sub-head {
+    font-size: 1.35em;
+  }
+
+}
+
+
+a {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+}
+
+span.b, p.b {
+  font-weight: 500;
+}
+
+p > code, span > code {
+  background: rgba(255,229,100,0.2);
+  color: #1a1a1a;
+}

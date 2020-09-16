@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700;900&family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap');
+@import "./colors";
+@import "./typography";
+
+
+.app {
+ background-color: $white;
+ display: flex;
+ max-width: 1800px;
+ margin: 0 auto;
+ flex-direction: column;
+ flex-basis: border-box;
+ justify-content: flex-start;
+ box-sizing: border-box;
+}
+
+
+html, body {
+ background-color: $black-rich;
+ box-sizing: border-box;
+}
+
+.page-container {
+ box-sizing: border-box;
+ flex-direction: column;
+ align-content: flex-start;
+
+
+ .page-content-container {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
+  min-height: calc(100vh - 160px);
+  background-color: $white-eggshell;
+  box-sizing: border-box;
+ }
+}

@@ -1,0 +1,117 @@
+@import '../colors';
+@import '../utils';
+
+// Main Nav CSS
+.nav {
+ max-width: 100%;
+ background-color: $black-eerie;
+ color: $white;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0;
+
+  display: flex;
+  flex-basis: border-box;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 5px 25px 0 25px;
+
+  @include for-size(tablet-landscape-up) {
+    padding: 50px 60px 0 100px;
+  }
+
+  .logo {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    cursor: pointer;
+
+    .text {
+      display: none;
+
+      overflow: hidden;
+      white-space:nowrap;
+      @include for-size(tablet-landscape-up) {
+        margin-top: 16px;
+        font-size: 1.2em;
+        font-weight: 500;
+        display: flex;
+      }
+
+
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
+      margin-top: 16px;
+      margin-right:6px;
+    }
+  }
+
+
+  // App Links
+  .links {
+    display: flex;
+    a {
+
+      padding: 10px 15px;
+      text-decoration: none;
+      color: $gray-silver;
+      font-size: 0.85em;
+      line-height: 2;
+      overflow: hidden;
+      white-space:nowrap;
+
+
+      @include for-size(tablet-landscape-up) {
+        padding: 15px 25px;
+        text-decoration: none;
+        color: $gray-silver;
+        font-size: 1em;
+        line-height: 2;
+      }
+
+
+      &.active {
+        border-bottom: 3px solid $red-ruby;
+        color: $white-eggshell;
+        font-weight: 300
+      }
+      &:active {
+        background-color: transparentize($gray-light, 0.8);
+
+      }
+
+    }
+
+
+  }
+
+
+  // Git Hub and Search
+  .more {
+    display: flex;
+    justify-content: right;
+    align-content: flex-end;
+    margin-top: 13px;
+    a {
+
+      display: none;
+      overflow: hidden;
+      white-space:nowrap;
+
+      @include for-size(desktop-up) {
+        display: flex;
+        font-size:0.65em;
+        color: $white-eggshell;
+        padding-left: 10px;
+        line-height: 3.9;
+      }
+
+
+    }
+  }
+
+
+
+}

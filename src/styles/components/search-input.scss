@@ -1,0 +1,47 @@
+@import "../colors";
+@import "../utils";
+
+.search-form {
+  position: relative;
+  padding-top: 5px;
+  label {
+    img {
+      width: 25px;
+      height:  25px;
+      cursor: pointer;
+
+
+      @include for-size(tablet-landscape-up) {
+        margin-top:0;
+        left: 5px;
+        top: 11px;
+        position: absolute;
+      }
+
+
+    }
+    .text {
+      display: none;
+    }
+  }
+
+
+
+
+  input {
+    padding-left: 40px;
+    border: 0;
+    display: none;
+
+    @include for-size(tablet-landscape-up) {
+      display: flex;
+    }
+
+    &:focus {
+      border: 0;
+      outline: none;
+      border-radius: 3px;
+      background-color: $red-blood;
+    }
+  }
+}

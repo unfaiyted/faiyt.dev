@@ -12,6 +12,9 @@
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended"
   ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
   "rules": {
   }
 }

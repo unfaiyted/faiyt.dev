@@ -1,11 +1,11 @@
 import React from "react";
+import {CodeBlock} from "../components/CodeBlock";
 /**
  * This is a page displaying the different components that have been created and is
  * used as a reference for various components in the application as they are being built
  * @constructor
  */
 export const FakeBlog = () => {
-
 
   const codeBlock = `
         import React, { useState } from 'react';
@@ -29,14 +29,10 @@ export const FakeBlog = () => {
 
       <h1>Introducing a Concept</h1>
 
-      <p className="sub-head">Concepts are new in React 16.8. They are like the best and other
+      <p className="sub-head">Concepts are new in Faiyt 1.8. They are like the best and other
       features without thinking about them. </p>
 
-      <code>
-        {codeBlock}
-      </code>
-
-
+      <CodeBlock codeString={codeBlock}/>
 
 
       <p>This new thing is cool because I said <code>getThing</code> and that makes thing work like
