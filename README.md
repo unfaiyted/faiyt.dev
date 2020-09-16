@@ -42,6 +42,7 @@ Application L Implemented:
 - Javascript
 - React
 - Scss 
+- Project linting
 
 Deployment: 
 - Docker

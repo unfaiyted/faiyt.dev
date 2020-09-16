@@ -24,6 +24,7 @@ yarn-error.log*
 
 .idea
 /.idea
+/.idea/*.xml
 *.iml
 /.idea/*.iml
 /.idea/**

@@ -1,6 +1,7 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+/*.iml
 # Datasource local storage ignored files
 /../../../../:\_WORKING\faiyt.dev\.idea/dataSources/
 /dataSources.local.xml
