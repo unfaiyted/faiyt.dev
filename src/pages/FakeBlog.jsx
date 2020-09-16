@@ -24,6 +24,25 @@ export const FakeBlog = () => {
       }
   `
 
+  const cssBlock = `
+    // Media queries
+  @mixin for-size($size) {
+    @if $size == phone-only {
+      @media (max-width: 599px) { @content; }
+    } @else if $size == tablet-portrait-up {
+      @media (min-width: 600px) { @content; }
+    } @else if $size == tablet-landscape-up {
+      @media (min-width: 900px) { @content; }
+    } @else if $size == desktop-up {
+      @media (min-width: 1200px) { @content; }
+    } @else if $size == big-desktop-up {
+      @media (min-width: 1800px) { @content; }
+    } @else if is-absolute-length($size) {
+      @media (min-width: $size) { @content; }
+    }
+  }
+`
+
   return (
     <div>
 
@@ -31,6 +50,12 @@ export const FakeBlog = () => {
 
       <p className="sub-head">Concepts are new in Faiyt 1.8. They are like the best and other
       features without thinking about them. </p>
+
+      <p>
+        This is the best and because its the best you have to use it.
+        No one asked you if you had anything else you might want to use.
+        That's simply wrong.
+      </p>
 
       <CodeBlock codeString={codeBlock}/>
 
@@ -43,9 +68,34 @@ export const FakeBlog = () => {
 
 
       <blockquote>
-        Note
+        <p className="b">Note to User</p>
+        <p>
+          The thing you need to know about version 1.8 is that it comes after
+          version 1.7. Yep thats how versioning works and if you dont understand
+          that at all. Here is a link to <a href="#">symantic versioning.</a>
+        </p>
+        <p>The reason is <code>codeIsCoded</code> you can get that <a href="#">here</a></p>
+
       </blockquote>
 
+      <h2>When to use Concepts</h2>
+
+      <p>There are a few good use cases for concepts:</p>
+
+      <ul>
+        <li>Managing foucs, text and stuff.</li>
+        <li>Learning and such.</li>
+        <li>If you think about it. It just works.</li>
+      </ul>
+
+      <p>Avoid using any concepts that are too complicated</p>
+
+      <p>For example, you could <code>start()</code> writing <code>code()</code>
+      and a bunch of other stuff too.</p>
+
+      <CodeBlock codeString={cssBlock} language="scss"/>
+
+      <h2>Don't think to much</h2>
 
 
     </div>

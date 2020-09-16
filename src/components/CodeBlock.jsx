@@ -20,10 +20,10 @@ const myStyle = {
 console.log(myStyle)
 
 
-export const CodeBlock = ({codeString}) => {
+export const CodeBlock = ({codeString, language = "javascript"}) => {
   return (
     <SyntaxHighlighter
-     language="javascript"
+     language={language}
      useInlineStyles={true}
      style={myStyle}
      showLineNumbers={true}>

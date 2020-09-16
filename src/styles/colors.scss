@@ -14,6 +14,19 @@ $gray-light: rgba(211, 211, 211, 1);
 $white-eggshell: rgb(245, 243, 244);
 $white: rgba(255, 255, 255, 1);
 
+
+
+
+$orange: hsla(33, 100%, 37%, 1);
+$orange-peel: hsla(33, 100%, 60%, 1);
+$orange-light: hsla(30, 96%, 72%, 1);
+
+
+$yellow: hsla(60, 100%, 80%, 1);
+$yellow-light: hsla(60, 100%, 89%, 1);
+;
+
+
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0b090aff, #161a1dff, #660708ff, #a4161aff, #ba181bff, #e5383bff, #b1a7a6ff, #d3d3d3ff, #f5f3f4ff, #ffffffff);
 $gradient-right: linear-gradient(90deg, #0b090aff, #161a1dff, #660708ff, #a4161aff, #ba181bff, #e5383bff, #b1a7a6ff, #d3d3d3ff, #f5f3f4ff, #ffffffff);
