@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  brain-hike:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: unfaiyted/brain-hike
+    container_name: brain-hike
+    ports:
+      - 9000:9000
+    restart: unless-stopped
+    depends_on:
+      - webserver
+  faiyt-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: unfaiyted/faiyt-dev
+    container_name: faiyt-dev
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+    depends_on:
+      - webserver
+  webserver:
+    image: linuxserver/swag
+    container_name:  webserver
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./nginx/config/:/config
+    environment:
+      - EMAIL=miller.l.dane@gmail.com
+      - URL=faiyt.com
+      - SUBDOMAINS=www,api,brain-hike
+      - VALIDATION=http
+      - TZ=Europe/London
+      - PUID=0
+      - PGID=0
