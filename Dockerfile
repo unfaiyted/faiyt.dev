@@ -1,7 +1,7 @@
 # build environment
 FROM node:14.7.0-alpine as build
-WORKDIR /app
-ENV PATH /app/node_modules/.bin:$PATH
+WORKDIR /faiyt-dev
+ENV PATH /faiyt-dev/node_modules/.bin:$PATH
 COPY package.json ./
 COPY package-lock.json ./
 RUN npm ci
