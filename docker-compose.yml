@@ -36,7 +36,7 @@ services:
       - ./nginx/config/:/config
     environment:
       - EMAIL=miller.l.dane@gmail.com
-      - URL=faiyt.com
+      - URL=faiyt.dev
       - SUBDOMAINS=www,api,brain-hike
       - VALIDATION=http
       - TZ=Europe/London
