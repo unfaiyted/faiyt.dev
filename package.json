@@ -18,7 +18,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docker:build": "docker build -t unfaiyted/brain-hike .",
+    "docker:run": "docker run --name faiyt-dev -p 3000:3000 -it --rm -v /app/node_modules -e CHOKIDAR_USEPOLLING=true unfaiyted/faiyt-dev",
+    "docker:both": "npm run docker:build && npm run docker:run",
+    "docker:push": "docker push unfaiyted/faiyt-dev:manual"
   },
   "eslintConfig": {
     "extends": "react-app"

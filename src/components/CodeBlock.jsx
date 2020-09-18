@@ -13,7 +13,8 @@ const myStyle = {
   "pre[class*=\"language-\"]": {
     ...pre,
     "border-radius": "5px",
-    "background": "#161a1d"
+    "background": "#161a1d",
+    "margin-bottom": "40px"
   }
 }
 
