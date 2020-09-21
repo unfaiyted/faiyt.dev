@@ -2,9 +2,6 @@ version: '3'
 
 services:
   brain-hike:
-    build:
-      context: .
-      dockerfile: Dockerfile
     image: unfaiyted/brain-hike
     container_name: brain-hike
     ports:
@@ -20,6 +17,14 @@ services:
     container_name: faiyt-dev
     ports:
       - 8080:8080
+    restart: unless-stopped
+    depends_on:
+      - webserver
+  faiyt-api:
+    image: unfaiyted/faiyt-api
+    container_name: faiyt-api
+    ports:
+      - 4000:4000
     restart: unless-stopped
     depends_on:
       - webserver
