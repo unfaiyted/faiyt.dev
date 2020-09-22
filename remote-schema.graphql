@@ -1,0 +1,52 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type BlogUpdateResponse {
+    entries: [UserBlogEntry]
+    message: String
+    success: Boolean!
+}
+
+type Mutation {
+    createBlogentry(_id: ID!): BlogUpdateResponse!
+    deleteBlogEntry(_id: ID!): BlogUpdateResponse!
+    login(username: String): String
+}
+
+type Query {
+    getBlogPost(_id: ID!): UserBlogEntry
+    getBlogPosts: [UserBlogEntry]!
+    getBlogPostsByUser(creator: ID!): [UserBlogEntry]
+    getUser(_id: ID): User
+    getUsers(_id: ID, username: String): [User]!
+    me: User
+    ping: String @deprecated(reason : "Because Reason")
+}
+
+type User {
+    _id: ID!
+    bio: String
+    blogPosts: [UserBlogEntry]
+    dateCreated: Date!
+    dateLastLogin: Date!
+    firstName: String!
+    gitHub: String
+    lastName: String!
+    username: String!
+}
+
+type UserBlogEntry {
+    _id: ID!
+    content: String!
+    creator: User!
+    dateCreated: String!
+    isPrivate: Boolean!
+}
+
+
+"Date custom scalar type"
+scalar Date
