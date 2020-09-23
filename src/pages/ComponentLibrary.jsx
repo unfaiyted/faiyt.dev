@@ -26,8 +26,7 @@ export const ComponentLibrary = () => {
         <span className="cap-first">Every word is capitalized on the first letter.</span>
         <span className="cap-all">Everything is capitalized. I'm yelling here!</span>
       </div>
-
-
+      
       <div className="component-section">
         <div>Type faces</div>
 

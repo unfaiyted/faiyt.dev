@@ -6,12 +6,12 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {ApolloProvider} from "@apollo/client";
 import {StateProvider} from "./utils/store";
-
 import { ApolloClient, InMemoryCache } from '@apollo/client';
+import {API} from "./utils/api";
 
 //TODO: setup uri to handle accessing the live api.faiyt.dev
 const client = new ApolloClient({
-  uri: 'http://localhost:4000',
+  uri: API,
   cache: new InMemoryCache()
 });
 

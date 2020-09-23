@@ -7,6 +7,8 @@ services:
     ports:
       - 8989:8989
     restart: unless-stopped
+    environment:
+      - NODE_ENV=production
     depends_on:
       - webserver
   faiyt-dev:
@@ -18,11 +20,15 @@ services:
     ports:
       - 8080:8080
     restart: unless-stopped
+    environment:
+      - NODE_ENV=production
     depends_on:
       - webserver
   faiyt-api:
     image: unfaiyted/faiyt-api
     container_name: faiyt-api
+    environment:
+      - NODE_ENV=production
     ports:
       - 4000:4000
     restart: unless-stopped
