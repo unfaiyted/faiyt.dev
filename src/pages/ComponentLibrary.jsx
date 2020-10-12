@@ -8,7 +8,7 @@ export const ComponentLibrary = () => {
   return (
     <div>
       <div className="component-section">
-        <div>Typography</div>
+        <div>Typography is Key</div>
         <h1>Level 1 Heading</h1>
         <h2>Level 2 Heading</h2>
         <h3>Level 3 Heading</h3>
@@ -26,7 +26,7 @@ export const ComponentLibrary = () => {
         <span className="cap-first">Every word is capitalized on the first letter.</span>
         <span className="cap-all">Everything is capitalized. I'm yelling here!</span>
       </div>
-      
+
       <div className="component-section">
         <div>Type faces</div>
 

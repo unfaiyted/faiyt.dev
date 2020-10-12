@@ -32,6 +32,8 @@ services:
     ports:
       - 4000:4000
     restart: unless-stopped
+    volumes:
+      - ./config/:/config
     depends_on:
       - webserver
   webserver:
