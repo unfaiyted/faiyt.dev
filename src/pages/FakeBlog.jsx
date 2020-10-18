@@ -1,5 +1,5 @@
 import React from "react";
-import {CodeBlock} from "../components/CodeBlock";
+import {CodeBlock} from "faiyt-ui-components";
 /**
  * This is a page displaying the different components that have been created and is
  * used as a reference for various components in the application as they are being built

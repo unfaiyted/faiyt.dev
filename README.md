@@ -1,6 +1,7 @@
 ## Faiyt.dev
 
-I wanted to have a hub that I can use to manage and deploy my various projects
+I wanted to have a hub that I can use to manage and deploy my various projects.
+It has the various dockerfile information to deploy the other projects: (ADD PROJECT LINKS)
 This project uses [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -38,7 +39,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 
-Application L Implemented:
+Application Technologies Implemented:
 - Javascript
 - React
 - Scss 
@@ -47,3 +48,4 @@ Application L Implemented:
 Deployment: 
 - Docker
 - Docker Compose
+- NGINX server for hosting applications

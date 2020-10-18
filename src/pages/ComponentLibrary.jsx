@@ -1,12 +1,26 @@
 import React from "react";
+import {Button} from "faiyt-ui-components"
 /**
  * This is a page displaying the different components that have been created and is
  * used as a reference for various components in the application as they are being built
  * @constructor
  */
+
+
+
 export const ComponentLibrary = () => {
   return (
     <div>
+
+
+      <Button
+        backgroundColor={"blue"}
+        label="Button"
+        onClick={() => {}}
+        primary
+        size="medium"
+      />
+
       <div className="component-section">
         <div>Typography is Key</div>
         <h1>Level 1 Heading</h1>
