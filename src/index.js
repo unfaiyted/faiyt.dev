@@ -5,6 +5,7 @@ import './styles/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {ApolloProvider} from "@apollo/client";
+import {ThemeProvider} from "faiyt-ui-components";
 import {StateProvider} from "./utils/store";
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 import {API} from "./utils/api";
@@ -18,11 +19,13 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <React.StrictMode>
-      <StateProvider>
-        <App />
-      </StateProvider>
-    </React.StrictMode>
+      <ThemeProvider>
+        <React.StrictMode>
+          <StateProvider>
+            <App />
+          </StateProvider>
+        </React.StrictMode>
+      </ThemeProvider>
   </ApolloProvider>
   ,
   document.getElementById('root')
